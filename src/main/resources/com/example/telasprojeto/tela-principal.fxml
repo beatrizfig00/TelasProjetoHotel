@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="800.0" prefWidth="1300.0" style="-fx-background-color: #F5FFFA;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.telasprojeto.TelaPrincipalController">
+   <children>
+      <ImageView fitHeight="734.0" fitWidth="1307.0" layoutX="-1.0" layoutY="72.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../foto_tela_principal.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="102.0" fitWidth="81.0" layoutX="614.0" layoutY="702.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../hotelsystem.png" />
+         </image>
+      </ImageView>
+      <MenuBar layoutY="-2.0" prefHeight="73.0" prefWidth="1306.0" style="-fx-background-color: #000000;" />
+      <MenuButton layoutX="14.0" layoutY="5.0" mnemonicParsing="false" style="-fx-background-color: #000000;" text="Cadastro" textFill="WHITE">
+        <items>
+          <MenuItem mnemonicParsing="false" text="Alterar Dados" />
+        </items>
+         <font>
+            <Font name="Calibri" size="32.0" />
+         </font>
+      </MenuButton>
+      <MenuButton layoutX="230.0" layoutY="5.0" mnemonicParsing="false" style="-fx-background-color: #000000;" text="Reserva" textFill="WHITE">
+         <items>
+            <MenuItem mnemonicParsing="false" text="Fazer Reserva" onAction="#abrirTelaReserva"/>
+            <MenuItem mnemonicParsing="false" text="Consultar" />
+            <MenuItem mnemonicParsing="false" text="Solicitar Cancelamento" />
+         </items>
+         <font>
+            <Font name="Calibri" size="32.0" />
+         </font>
+      </MenuButton>
+      <MenuButton layoutX="436.0" layoutY="5.0" mnemonicParsing="false" style="-fx-background-color: #000000;" text="Serviços" textFill="WHITE">
+         <items>
+            <MenuItem mnemonicParsing="false" text="Solicitar Serviço de Quarto" onAction="#abrirTelaServicoQuarto"/>
+            <MenuItem mnemonicParsing="false" text="Lavanderia" onAction="#abrirTelaLavanderia" />
+            <MenuItem mnemonicParsing="false" text="SPA" onAction="#abrirTelaSpa"/>
+            <MenuItem mnemonicParsing="false" text="Alimentação e Produtos" onAction="#abrirTelaAlimentacaoProdutos"/>
+            <MenuItem mnemonicParsing="false" text="Transporte" onAction="#abrirTelaTransporte" />
+         </items>
+         <font>
+            <Font name="Calibri" size="32.0" />
+         </font>
+      </MenuButton>
+      <MenuButton layoutX="640.0" layoutY="5.0" mnemonicParsing="false" style="-fx-background-color: #000000;" text="Financeiro" textFill="WHITE">
+         <items>
+            <MenuItem mnemonicParsing="false" text="Conta Atual" onAction="#abrirTelaContaAtual"/>
+            <MenuItem mnemonicParsing="false" text="Pagamento" onAction="#abrirTelaPagamento" />
+         </items>
+         <font>
+            <Font name="Calibri" size="32.0" />
+         </font>
+      </MenuButton>
+      <MenuButton layoutX="867.0" layoutY="5.0" mnemonicParsing="false" style="-fx-background-color: #000000;" text="Feedback" textFill="WHITE">
+         <items>
+            <MenuItem mnemonicParsing="false" text="Deixar Comentário" onAction="#abrirTelaFeedback"/>
+         </items>
+         <font>
+            <Font name="Calibri" size="32.0" />
+         </font>
+      </MenuButton>
+      <MenuButton layoutX="1082.0" layoutY="5.0" mnemonicParsing="false" style="-fx-background-color: #000000;" text="Fidelidade" textFill="WHITE">
+         <items>
+            <MenuItem mnemonicParsing="false" text="Visualizar" />
+         </items>
+         <font>
+            <Font name="Calibri" size="32.0" />
+         </font>
+      </MenuButton>
+      <Button layoutX="1213.0" layoutY="732.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="67.0" style="-fx-background-color: #000000;" text="SAIR" textFill="WHITE" onAction="#SairButton">
+         <font>
+            <Font name="Calibri Bold" size="14.0" />
+         </font>
+      </Button>
+      <Separator layoutY="702.0" prefHeight="2.0" prefWidth="1306.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="42.0" layoutX="158.0" layoutY="17.0" stroke="BLACK" strokeType="INSIDE" width="38.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="42.0" layoutX="359.0" layoutY="11.0" stroke="BLACK" strokeType="INSIDE" width="38.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="42.0" layoutX="1247.0" layoutY="20.0" stroke="BLACK" strokeType="INSIDE" width="38.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="59.0" layoutX="1016.0" layoutY="9.0" stroke="BLACK" strokeType="INSIDE" width="53.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="42.0" layoutX="812.0" layoutY="20.0" stroke="BLACK" strokeType="INSIDE" width="38.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="48.0" layoutX="580.0" layoutY="14.0" stroke="BLACK" strokeType="INSIDE" width="67.0" />
+      <Button layoutX="25.0" layoutY="732.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="67.0" style="-fx-background-color: #000000;" text="VOLTAR" textFill="WHITE" onAction="#voltarParaLogin">
+         <font>
+            <Font name="Calibri Bold" size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

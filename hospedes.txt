@@ -1,0 +1,6 @@
+beatriz,regina,beta 67,23,703675284,40028922,bia@hotmail.com,20024,biareg,281155
+fabio,arco,estrada luz,46,19856234,99884411,fabio@gmail.com,200365,bio46,4545458
+eli,lins,rua mato,47,064759152,88995625,elisa@gmail.com,230052,elisangela,484848
+wilber,antonio,rua casa,28,87458745,202045,will@hotmail.com,54564565,will47,9898
+fulano,beltrano,rua beltrana,15,025630256,4201536,email@hitma.com,7410,flano,1256
+admi,trador,travessa adm,18,658982561,16165,adm@gmail.com,159741023,adm,teste

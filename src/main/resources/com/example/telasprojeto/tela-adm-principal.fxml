@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="804.0" prefWidth="1300.0" style="-fx-background-color: #FF9186;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.telasprojeto.TelaAdmPrincipalController">
+    <children>
+        <Separator layoutX="-7.0" layoutY="695.0" prefHeight="2.0" prefWidth="1306.0" />
+        <ImageView fitHeight="102.0" fitWidth="81.0" layoutX="607.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../../hotelsystem.png" />
+            </image>
+        </ImageView>
+        <Button layoutX="22.0" layoutY="728.0" mnemonicParsing="false" onAction="#voltarParaLogin" prefHeight="42.0" prefWidth="67.0" style="-fx-background-color: #000000;" text="VOLTAR" textFill="WHITE">
+            <font>
+                <Font name="Calibri Bold" size="14.0" />
+            </font>
+        </Button>
+        <Button layoutX="1212.0" layoutY="728.0" mnemonicParsing="false" onAction="#SairButton" prefHeight="42.0" prefWidth="67.0" style="-fx-background-color: #000000;" text="SAIR" textFill="WHITE">
+            <font>
+                <Font name="Calibri Bold" size="14.0" />
+            </font>
+        </Button>
+        <MenuBar layoutY="-7.0" prefHeight="30.0" prefWidth="1300.0" style="-fx-background-color: #000000;" />
+         <MenuButton layoutX="93.0" layoutY="181.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="223.0" style="-fx-background-color: #000000;" text="Cadastro" textFill="WHITE">
+            <items>
+                <MenuItem mnemonicParsing="false" text="Tela Cadastro" />
+            </items>
+            <font>
+                <Font name="Calibri" size="32.0" />
+            </font>
+        </MenuButton>
+        <MenuButton layoutX="93.0" layoutY="340.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="223.0" style="-fx-background-color: #000000;" text="Reserva" textFill="WHITE">
+            <items>
+                <MenuItem mnemonicParsing="false" text="Tela Reserva" />
+            </items>
+            <font>
+                <Font name="Calibri" size="32.0" />
+            </font>
+        </MenuButton>
+        <MenuButton layoutX="943.0" layoutY="340.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="223.0" style="-fx-background-color: #000000;" text="Serviços" textFill="WHITE">
+            <items>
+                <MenuItem mnemonicParsing="false" text="Tela Serviços" />
+            </items>
+            <font>
+                <Font name="Calibri" size="32.0" />
+            </font>
+        </MenuButton>
+        <MenuButton layoutX="93.0" layoutY="504.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="223.0" style="-fx-background-color: #000000;" text="Financeiro" textFill="WHITE">
+            <items>
+                <MenuItem mnemonicParsing="false" text="Tela Financeiro" />
+            </items>
+            <font>
+                <Font name="Calibri" size="32.0" />
+            </font>
+        </MenuButton>
+        <MenuButton layoutX="943.0" layoutY="181.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="223.0" style="-fx-background-color: #000000;" text="Feedback" textFill="WHITE">
+            <items>
+                <MenuItem mnemonicParsing="false" text="Tela Feedback" />
+            </items>
+            <font>
+                <Font name="Calibri" size="32.0" />
+            </font>
+        </MenuButton>
+        <MenuButton layoutX="943.0" layoutY="504.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="223.0" style="-fx-background-color: #000000;" text="Fidelidade" textFill="WHITE">
+            <items>
+                <MenuItem mnemonicParsing="false" text="Tela Fidelidade" />
+            </items>
+            <font>
+                <Font name="Calibri" size="32.0" />
+            </font>
+        </MenuButton>
+    </children>
+</AnchorPane>

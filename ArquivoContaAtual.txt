@@ -1,0 +1,5 @@
+biareg,Lavagem Normal,20,00
+biareg,Lavagem Normal,20,00
+biareg,Lavagem a Seco,30,00
+biareg,Lavagem Normal,20,00
+biareg,Lavagem a Seco,30,00

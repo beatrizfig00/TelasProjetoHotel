@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.SplitMenuButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="800.0" prefWidth="1300.0" style="-fx-background-color: #F5FFFA;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.telasprojeto.TelaReservaController">
+   <children>
+      <Button layoutX="1151.0" layoutY="7.0" mnemonicParsing="false" onAction="#voltarParaTelaPrincipal" prefHeight="23.0" prefWidth="67.0" style="-fx-background-color: #000000;" text="VOLTAR" textFill="WHITE">
+         <font>
+            <Font name="Calibri Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="1224.0" layoutY="7.0" mnemonicParsing="false" onAction="#SairButton" prefHeight="23.0" prefWidth="67.0" style="-fx-background-color: #000000;" text="SAIR" textFill="WHITE">
+         <font>
+            <Font name="Calibri Bold" size="14.0" />
+         </font>
+      </Button>
+      <DatePicker layoutX="466.0" layoutY="329.0" prefHeight="42.0" prefWidth="200.0" />
+      <DatePicker layoutX="708.0" layoutY="329.0" prefHeight="42.0" prefWidth="200.0" />
+      <Label layoutX="466.0" layoutY="300.0" prefHeight="9.0" prefWidth="76.0" text="Check-in:">
+         <font>
+            <Font name="Calibri" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="709.0" layoutY="301.0" text="Check-out:">
+         <font>
+            <Font name="Calibri" size="20.0" />
+         </font>
+      </Label>
+      <Button layoutX="33.0" layoutY="286.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="116.0" style="-fx-background-color: #18A98C;" text="Reservar" textFill="WHITE">
+         <font>
+            <Font name="Calibri Bold" size="18.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="139.0" fitWidth="100.0" layoutX="44.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../hotelsystem.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="218.0" fitWidth="337.0" layoutY="582.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../foto_quarto_standard.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="218.0" fitWidth="341.0" layoutX="319.0" layoutY="582.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../foto_quarto_deluxe.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="218.0" fitWidth="388.0" layoutX="640.0" layoutY="582.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../foto_suíte_executiva.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="218.0" fitWidth="345.0" layoutX="973.0" layoutY="582.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../foto_suíte_presidencial.jpg" />
+         </image>
+      </ImageView>
+      <Separator layoutX="173.0" layoutY="-2.0" orientation="VERTICAL" prefHeight="347.0" prefWidth="13.0" />
+      <Button layoutX="-2.0" layoutY="553.0" mnemonicParsing="false" style="-fx-background-color: #B22222;" text="Quarto Standard" textFill="WHITE">
+         <font>
+            <Font name="Calibri" size="15.0" />
+         </font>
+      </Button>
+      <Button layoutX="640.0" layoutY="554.0" mnemonicParsing="false" style="-fx-background-color: #B22222;" text="Suíte Executiva" textFill="WHITE">
+         <font>
+            <Font name="Calibri" size="15.0" />
+         </font>
+      </Button>
+      <Button layoutX="972.0" layoutY="555.0" mnemonicParsing="false" style="-fx-background-color: #B22222;" text="Suíte Presidencial" textFill="WHITE">
+         <font>
+            <Font name="Calibri" size="15.0" />
+         </font>
+      </Button>
+      <Button layoutX="319.0" layoutY="554.0" mnemonicParsing="false" style="-fx-background-color: #B22222;" text="Quarto Deluxe" textFill="WHITE">
+         <font>
+            <Font name="Calibri" size="15.0" />
+         </font>
+      </Button>
+      <Separator layoutX="-8.0" layoutY="340.0" prefHeight="10.0" prefWidth="186.0" />
+      <Label layoutX="308.0" layoutY="13.0" prefHeight="22.0" prefWidth="745.0" text="Bem-vindo à nossa página de reservas! Para garantir sua estadia conosco, siga as etapas abaixo:">
+         <font>
+            <Font name="Calibri Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      <TextField layoutX="14.0" layoutY="189.0" />
+      <PasswordField layoutX="14.0" layoutY="247.0" />
+      <Label layoutX="15.0" layoutY="163.0" prefHeight="9.0" prefWidth="76.0" text="Login:">
+         <font>
+            <Font name="Calibri" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="16.0" layoutY="222.0" prefHeight="9.0" prefWidth="76.0" text="Senha:">
+         <font>
+            <Font name="Calibri" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="397.0" layoutY="49.0" prefHeight="18.0" prefWidth="535.0" text="1) Selecione a data de check-in e check-out desejadas utilizando o calendário abaixo.">
+         <font>
+            <Font name="Calibri Bold Italic" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="394.0" layoutY="75.0" prefHeight="18.0" prefWidth="535.0" text="2) Escolha uma das opções de quartos disponíveis abaixo, clicando no botão vermelho">
+         <font>
+            <Font name="Calibri Bold Italic" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="440.0" layoutY="94.0" prefHeight="18.0" prefWidth="455.0" text=" para escolher o tipo de quarto que melhor atenda às suas necessidades.">
+         <font>
+            <Font name="Calibri Bold Italic" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="474.0" layoutY="122.0" prefHeight="18.0" prefWidth="387.0" text="3) Por fim, insira seu login e senha para confirmar a reserva. ">
+         <font>
+            <Font name="Calibri Bold Italic" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="373.0" layoutY="159.0" prefHeight="18.0" prefWidth="620.0" text="Agradecemos por escolher nosso hotel e esperamos proporcionar a você uma estadia memorável!">
+         <font>
+            <Font name="Calibri Bold Italic" size="15.0" />
+         </font>
+      </Label>
+      <SplitMenuButton layoutX="995.0" layoutY="337.0" mnemonicParsing="false" style="-fx-background-color: #B22222;" text="Valor da Diária">
+        <items>
+          <MenuItem mnemonicParsing="false" text="Quarto Standard - R$ 75" />
+          <MenuItem mnemonicParsing="false" text="Quarto Deluxe - R$ 125" />
+            <MenuItem mnemonicParsing="false" text="Suíte Executiva - R$ 200" />
+            <MenuItem mnemonicParsing="false" text="Suíte Presidencial - R$ 300" />
+        </items>
+         <font>
+            <Font name="Calibri" size="13.0" />
+         </font>
+      </SplitMenuButton>
+   </children>
+</AnchorPane>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="675.0" prefWidth="803.0" style="-fx-background-color: #F5FFFA;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.telasprojeto.TelaPagamentoController">
+   <children>
+      <Button layoutX="709.0" layoutY="31.0" mnemonicParsing="false" onAction="#voltarParaTelaPrincipal" prefHeight="23.0" prefWidth="67.0" style="-fx-background-color: #000000;" text="VOLTAR" textFill="WHITE">
+         <font>
+            <Font name="Calibri Bold" size="14.0" />
+         </font>
+      </Button>
+      <Label layoutX="346.0" layoutY="624.0" prefHeight="22.0" prefWidth="111.0" text="Volte Sempre!">
+         <font>
+            <Font name="Calibri Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="109.0" layoutY="587.0" prefHeight="18.0" prefWidth="572.0" text="Obrigado por se hospedar em nosso hotel esperamos que tenha sido uma boa experiência!">
+         <font>
+            <Font name="Calibri Bold Italic" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="193.0" layoutY="119.0" prefHeight="22.0" prefWidth="428.0" text="Selecione uma das opções para realizar seu pagamento!">
+         <font>
+            <Font name="Calibri Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      <Button layoutX="325.0" layoutY="461.0" mnemonicParsing="false" onAction="#TelaPagamentoPix" prefHeight="32.0" prefWidth="141.0" style="-fx-background-color: #18A98C;" text="Pix" textFill="WHITE">
+         <font>
+            <Font name="Calibri Bold" size="16.0" />
+         </font>
+      </Button>
+      <Button layoutX="325.0" layoutY="306.0" mnemonicParsing="false" onAction="#TelaPagamentoDinheiro" prefHeight="32.0" prefWidth="141.0" style="-fx-background-color: #18A98C;" text="Dinheiro" textFill="WHITE">
+         <font>
+            <Font name="Calibri Bold" size="16.0" />
+         </font>
+      </Button>
+      <Button layoutX="325.0" layoutY="383.0" mnemonicParsing="false" onAction="#TelaPagamentoCartao" prefHeight="32.0" prefWidth="141.0" style="-fx-background-color: #18A98C;" text="Cartão" textFill="WHITE">
+         <font>
+            <Font name="Calibri Bold" size="16.0" />
+         </font>
+      </Button>
+      <Label fx:id="valorTotalLabel" layoutX="206.0" layoutY="195.0" text="Total da Conta: R$ 0.00" textFill="#188a73">
+         <font>
+            <Font name="Calibri" size="40.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

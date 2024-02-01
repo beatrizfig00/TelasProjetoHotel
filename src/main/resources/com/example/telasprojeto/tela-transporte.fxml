@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="675.0" prefWidth="803.0" style="-fx-background-color: #F5FFFA;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.telasprojeto.TelaTransporteController">
+   <children>
+      <ImageView fitHeight="139.0" fitWidth="100.0" layoutX="103.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../hotelsystem.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="32.0" layoutY="152.0" prefHeight="9.0" prefWidth="76.0" text="Login:">
+         <font>
+            <Font name="Calibri" size="20.0" />
+         </font>
+      </Label>
+      <TextField layoutX="30.0" layoutY="179.0" prefHeight="25.0" prefWidth="240.0" />
+      <Label layoutX="32.0" layoutY="221.0" prefHeight="9.0" prefWidth="76.0" text="Senha:">
+         <font>
+            <Font name="Calibri" size="20.0" />
+         </font>
+      </Label>
+      <PasswordField layoutX="30.0" layoutY="247.0" prefHeight="25.0" prefWidth="240.0" />
+      <Button layoutX="83.0" layoutY="287.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="141.0" style="-fx-background-color: #18A98C;" text="Adicionar à Conta" textFill="WHITE">
+         <font>
+            <Font name="Calibri Bold" size="16.0" />
+         </font>
+      </Button>
+      <Separator layoutX="1.0" layoutY="338.0" prefHeight="0.0" prefWidth="803.0" />
+      <ImageView fitHeight="364.0" fitWidth="501.0" layoutX="301.0" layoutY="2.0" opacity="0.44" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../foto_transporte.jpg" />
+         </image>
+      </ImageView>
+      <Button layoutX="715.0" layoutY="24.0" mnemonicParsing="false" onAction="#voltarParaTelaPrincipal" prefHeight="23.0" prefWidth="67.0" style="-fx-background-color: #000000;" text="VOLTAR" textFill="WHITE">
+         <font>
+            <Font name="Calibri Bold" size="14.0" />
+         </font>
+      </Button>
+      <CheckBox fx:id="taxiCheckBox" layoutX="563.0" layoutY="362.0" mnemonicParsing="false" onAction="#calcularValorTotal" text="Táxi">
+         <font>
+            <Font name="Calibri" size="24.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="limusineCheckBox" layoutX="563.0" layoutY="413.0" mnemonicParsing="false" onAction="#calcularValorTotal" text="Limusine">
+         <font>
+            <Font name="Calibri" size="24.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="carroparticularCheckBox" layoutX="563.0" layoutY="464.0" mnemonicParsing="false" onAction="#calcularValorTotal" text="Carro Particular">
+         <font>
+            <Font name="Calibri" size="24.0" />
+         </font>
+      </CheckBox>
+      <Label layoutX="112.0" layoutY="355.0" prefHeight="22.0" prefWidth="328.0" text="Bem-vindo ao nosso serviço de Transporte!">
+         <font>
+            <Font name="Calibri Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="40.0" layoutY="388.0" prefHeight="18.0" prefWidth="488.0" text="Nosso serviço de transporte é terceirizado para garantir a melhor experiência ">
+         <font>
+            <Font name="Calibri Bold Italic" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="22.0" layoutY="407.0" prefHeight="18.0" prefWidth="522.0" text="possível para nossos usuários. Ao solicitar transporte através de nossa plataforma, ">
+         <font>
+            <Font name="Calibri Bold Italic" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="19.0" layoutY="427.0" prefHeight="18.0" prefWidth="531.0" text="é importante observar que o valor cobrado refere-se apenas à taxa de solicitação do">
+         <font>
+            <Font name="Calibri Bold Italic" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="41.0" layoutY="447.0" prefHeight="18.0" prefWidth="488.0" text="serviço. O custo total da viagem será acertado diretamente com o motorista!">
+         <font>
+            <Font name="Calibri Bold Italic" size="15.0" />
+         </font>
+      </Label>
+      <Separator layoutX="1.0" layoutY="514.0" prefHeight="0.0" prefWidth="802.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#dcffea" height="158.0" layoutX="1.0" layoutY="517.0" stroke="WHITE" strokeType="INSIDE" width="802.0" />
+      <Label layoutX="34.0" layoutY="531.0" prefHeight="28.0" prefWidth="165.0" text="Tabela de Preços:">
+         <font>
+            <Font name="Calibri Bold Italic" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="valorTotalLabel" layoutX="400.0" layoutY="564.0" text="Preço Total: R$ 0.00" textFill="#188a73">
+         <font>
+            <Font name="Calibri" size="45.0" />
+         </font>
+      </Label>
+      <Label layoutX="33.0" layoutY="567.0" text="Táxi: R$ 7">
+         <font>
+            <Font name="Calibri Italic" size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="33.0" layoutY="596.0" text="Limusine: R$ 12">
+         <font>
+            <Font name="Calibri Italic" size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="32.0" layoutY="625.0" text="Carro Particular: R$ 5">
+         <font>
+            <Font name="Calibri Italic" size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="27.0" layoutY="480.0" text="Digite o horário que deseja encontrar com seu motorista:">
+         <font>
+            <Font name="Calibri Italic" size="14.0" />
+         </font>
+      </Label>
+      <TextField layoutX="356.0" layoutY="476.0" prefHeight="17.0" prefWidth="82.0" style="-fx-border-color: #18A98C;" />
+
+   </children>
+</AnchorPane>
